@@ -10,7 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*Обнуление*/
+/* Обнуление */
 *,
 *::before,
 *::after {
@@ -279,10 +279,23 @@ h1::before {
   margin-left: 24px;
   margin-top: 16px;
 }
+@media (min-width: 768px) {
+  .main-block__button {
+    margin-left: 33px;
+  }
+}
+@media (min-width: 1120px) {
+  .main-block__button {
+    margin-left: 40px;
+  }
+}
 #button__link {
   display: flex;
   flex-direction: row;
   align-content: center;
+}
+#text-item-mob {
+  display: none;
 }
 #button__text--more {
   margin-left: 16px;
@@ -325,7 +338,4 @@ button {
 .image__page {
   height: 100%;
   width: 100%;
-}
-#text-item-mob {
-  display: none;
 }
